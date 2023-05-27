@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Rest countries</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <h3 class="header-title">Where in the world?</h3>
+                <div class="header-mode">
+                    <img src="./images/dark-mode.svg" alt="Dark mode" class="header-image">
+                    <h5 class="header-mode__title">Dark Mode</h5>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <form class="hero-form">
+                        <label for="hero-search">
+                            <input type="text" placeholder="Search for a country…" class="hero-search__input">
+                        </label>
+        
+                        <select name="select" id="filter" class="hero-form__filter">
+                            <option value="0" default hidden>Filter by Region</option>
+                            <option value="1">All</option>
+                        </select>
+                    </form>
+                    <ul class="hero-cards">
+                        <li class="hero-card">
+                            <img src="./images/germany.png" alt="country image">
+                            <div class="hero-card__body">
+                                <h3 class="card-title">
+                                    Germany
+                                </h3>
+                                <div class="card-extras">
+                                    <p class="card-population"><strong>Population: </strong> 81,770,900</p>
+                                    <p class="region"><strong>Region: </strong> Europe</p>
+                                    <p class="capital"><strong>Capital: </strong>Berlin</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal hide-modal">
+            
+        </div>
+    </main>
+
+
+
+    <script src="./utils.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
